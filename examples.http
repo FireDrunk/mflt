@@ -1,0 +1,26 @@
+GET http://localhost:8080
+
+###
+POST http://localhost:8080/link
+Accept: application/json
+
+{
+  "link": "https://www.google.com",
+  "tags": []
+}
+
+###
+
+GET http://localhost:8080/link/
+
+###
+
+GET http://localhost:8080/link/bc7efdfb-aa16-465a-a164-7a8707027ef0
+
+###
+# @no-redirect
+GET http://localhost:8080/target/eyJpZCI6IjAxMDZhMTcyLWZkYjktNDYwMS1iZmNkLThkNDUyODNjMmUwYSIsInRyYWNraW5nX2xpbmsiOiIiLCJsaW5rIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbSJ9
+
+###
+
+GET http://localhost:8080/tracking/
